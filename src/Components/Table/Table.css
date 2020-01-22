@@ -1,0 +1,35 @@
+.table {
+    height: 35vh;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4vh;
+}
+th {
+    border-bottom: solid black 1px;
+}
+td {
+    border-bottom: solid black 1px;
+    height: 2vh;
+}
+
+.table-rows {
+    height: fit-content;
+}
+
+
+.delete-button {
+  
+    font-size: 3rem;
+    
+}
+
+button {
+    height: 4vh;
+    width: 35%;
+    border-radius: 10px;
+    background-color: #42b0f1;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}

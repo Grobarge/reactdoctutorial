@@ -1,0 +1,15 @@
+.form {
+    height: 25vh;
+    width: 50%;
+}
+
+label {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+input {
+    font-size: 3rem;
+    border-radius: 15px;
+    width: 100%;
+}

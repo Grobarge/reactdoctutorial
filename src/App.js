@@ -3,6 +3,7 @@ import './App.css';
 
 //Components 
 import Table from './Components/Table/Table';
+import Form from './Components/Form/Form';
 
 
 export default class App extends Component {
@@ -10,20 +11,12 @@ export default class App extends Component {
     characters: [
       {
         name: 'Gaje',
-        job: 'developer'
+        job: 'Dev'
       },
       {
-        name: 'Mac',
-        job: 'Bouncer',
-      },
-      {
-        name: 'Dee',
-        job: 'Aspring actress',
-      },
-      {
-        name: 'Dennis',
-        job: 'Bartender',
-      },
+        name: 'jay',
+        job: 'bae'
+      }
     ]
   }
 
@@ -43,6 +36,7 @@ export default class App extends Component {
     return (
       <div className="container">
         <Table characterData={characters} removeCharacter={this.removeCharacter} />
+        <Form />
       </div>
     )
   }
