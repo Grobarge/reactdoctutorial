@@ -20,6 +20,12 @@ export default class App extends Component {
     ]
   }
 
+  // will update the state by taking the existing this.state.characters and adding the new character parameter, using the ES6 spread operator
+
+  handleSubmit = character => {
+    this.setState({ characters: [...this.state.characters, character] })
+  }
+
   removeCharacter = index => {
     const { characters } = this.state
 
@@ -35,8 +41,9 @@ export default class App extends Component {
 
     return (
       <div className="container">
+        <h1>Simple Table App</h1>
         <Table characterData={characters} removeCharacter={this.removeCharacter} />
-        <Form />
+        <Form handleSubmit={this.handleSubmit} />
       </div>
     )
   }

@@ -1,6 +1,8 @@
 .form {
-    height: 25vh;
+ height: 25vh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -10,6 +12,16 @@ label {
 
 input {
     font-size: 3rem;
-    border-radius: 15px;
-    width: 100%;
+    width: 50%;
+    margin: 10px;
+    border-radius: 7px;
+    
+}
+
+.submit-button {
+    width: 35%;
+    background-color: #42b0f1;
+    border: none;
+    color: white;
+    font-size: 2rem;
 }

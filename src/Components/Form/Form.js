@@ -31,6 +31,14 @@ export default class Form extends Component {
     }
 
 
+    // create a method called submitForm() that will call that function, and pass the Form state through as the character parameter we defined earlier. 
+    // It will also reset the state to the initial state, to clear the form after submit.
+    submitForm = () => {
+        this.props.handleSubmit(this.state)
+        this.setState(this.initialState)
+    }
+
+
     // get our two properties from state, and assign them as the values that correspond to the proper form keys.
     // We'll run the handleChange() method as the onChange of the input
     render() {
@@ -52,6 +60,11 @@ export default class Form extends Component {
                     id="job"
                     value={job}
                     onChange={this.handleChange} />
+                <input
+                    className="submit-button"
+                    type="button"
+                    value="Submit"
+                    onClick={this.submitForm} />
             </form>
         )
     }
