@@ -10,12 +10,12 @@ export default class App extends Component {
   state = {
     characters: [
       {
-        name: 'Gaje',
-        job: 'Dev'
+        name: 'Gaje Robarge',
+        job: 'Front End Developer'
       },
       {
-        name: 'jay',
-        job: 'bae'
+        name: 'Jayden Strickling',
+        job: 'Operations Specialist'
       }
     ]
   }
@@ -41,7 +41,6 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1>Simple Table App</h1>
         <Table characterData={characters} removeCharacter={this.removeCharacter} />
         <Form handleSubmit={this.handleSubmit} />
       </div>
